@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gender-Automat: wandelt technische Texte automatisch in gendergerechte Sprache um.">
+    <title>Gender-Automat</title>
+    
+
+
+<style type="text/css">
+p {color: #202122;}
+h1 {background-color: #fff;
+padding: 0.5em;
+border: 2px solid #ccc;}
+h1, h2 {color:#2a4d69}
+</style>
+
+
+<style type ="text/css">
+header {background-color:#fff;
+border-bottom: 1px solid #ccc;
+padding: 10px;}
+header nav ul {text-align: center; 
+    list-style-type:none; 
+    margin:0; padding: 5px 0; 
+    background-color:#e9ecef; 
+    border-top: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc;}
+    header nav ul li{display:inline; 
+        margin: 0 15px;}
+header nav ul li a {text-decoration: none; 
+    color: #202122; 
+    font-weight:bold;}
+header nav ul li a:hover{color:#0078d7}
+footer{clear:both; 
+    background-color: #e9ecef; 
+    text-align: center; 
+    padding: 1em; 
+    border-top: 1px solid #ccc;}
+footer nav ul {list-style-type: none; 
+    padding: 0; 
+    margin: 0;}
+footer nav ul li {display: inline; 
+    margin: 0 10px;}
+
+</style>
+<style>
+#lokalmenue{
+    width: 20%;
+    float: left;
+    background-color: #e6f0ff;
+    padding: 1em;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+#lokalmenue a {
+    color: #2a4d69;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin: 5px 0;
+}
+#lokalmenue a:hover {
+    color: #0078d7;
+    text-decoration: underline;
+}
+main section {
+    width: 75%;
+    float: right;
+     padding-right: 60px;
+    box-sizing: border-box;
+}
+html[lang="ar"] #lokalmenue{
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+html[lang="ar"] main section{
+    float:left;
+}
+</style>
+<style>
+    button{background-color: #0078d7;
+color: white;
+border: none;
+border-radius: 4px;
+padding: 12px 20px;
+cursor: pointer;
+font-size: 1.05em;}
+button:hover{background-color: #005fa3;}
+@media (max-width: 800px){
+    #lokalmenue, main section {
+        float: none;
+        width: 100%;
+    }
+    header nav ul {
+        text-align: center;
+    }
+    body {font-size: 1em;}
+   button{background-color: #0078d7;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 12px 20px;
+        cursor: pointer;
+}
+button:hover{background-color: #005fa3;}
+header img, header h1{
+    display: block;
+    margin: 0 auto;
+    text-align: center;}
+}
+</style>
+<style> 
+body{margin:0; 
+    padding: 0 10px; 
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;}
+    p {font-size: 1.08em;
+    line-height: 1.6;
+letter-spacing: 0.02em;}
+</style>
+</head>
+    <body>
+        <header>
+    <img src="markus-winkler-y6UhsOWDiVs-unsplash.jpg" 
+    alt="Logo Gender-Automat"
+    style= "max-width: 100%; height:auto; border-radius:8px; float: left; margin-right: 10px;">
+    <h1 style="float: left; margin: 10px 0;">Gender-Automat</h1>
+    <div style="float:right; text-align: right;">
+        <form style="display: inline;">
+            <input type="text" name="suche" placeholder="Suche">
+        </form>
+        <br> 
+        <a href="#">Benutzerkonto</a> | <a href="#">Anmelden</a>
+    </div>
+    <div style="clear:both;"></div>
+    <p style="font-size: 0.8em; text-align: left; margin: 0; color: #555;">
+        Foto: Markus Winkler / Unsplash (2025)
+    </p>
+    
+<nav>
+<ul>
+    <li><a href="startseite.html">Startseite</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+    <li><a href="ueberuns.html">Über uns</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+    <nav id="lokalmenue">
+    <ul>
+        <li><a href="#texte">Beispieltexte</a></li>
+        <li><a href="#funktionen">Wie funktioniert der Automat?</a></li>
+        <li><a href="#kontakt">Fragen & Feedback</a></li>
+    </ul>
+    </nav>
+    <section>
+<h2>Willkommen auf der Homepage von Gender-Automat</h2>
+<p>
+Diese Webseite soll Texte automatisch in eine gendergerechte Form umwandeln!
+</p>
+    </section>
+    <section id="texte">
+        <h2>Beispieltexte aus technischen Anleitungen </h2>
+        <p>Unsere Techniker prüfen regelmäßig die Sicherheit der Anlagen und Systeme.</p>
+        <p>Die Mitarbeiter erstellen die technischen Handbücher für die Kundschaft.</p>
+        <p>Jeder Benutzer kann über das Kundenportal neue Software-Versionen herunterladen.</p>
+<button id="btn-gendern" type="button">Texte gendern</button>
+    </section>
+    <section id="funktionen">
+        <h2>Wie funktioniert der Gender-Automat?</h2>
+        <p> Der Gender-Automat durchsucht automatisch Texte nach häufig verwendeten generischen
+            Maskulina und ersetzt sie durch gendergerechte Formen wie "Techniker:innen" 
+            oder "Benutzer:innen".
+            So werden Texte inklusiver und verständlicher gestaltet.
+        </p>
+    </section>
+<section id="kontakt">
+    <h2> Fragen & Feedback</h2>
+    <p>Wir freuen uns über Ihr Interesse am Gender-Automat. Bei Fragen stehen wir Ihnen selbstverständlich
+        gerne zur Verfügung.Ihr Feedback hilft uns dabei, die Anwendung stetig zu verbessern und kontinuierlich 
+        zu optimieren.  
+    </p>
+</section>
+
+
+</main>
+    <footer>
+<nav>
+    <ul>
+        <li><a href="privacy.html">Datenschutz</a></li>
+        <li><a href="imprint.html">Impressum</a></li>
+    </ul>
+    </nav>
+    </footer>
+<script type="text/javascript">
+    document.getElementById("btn-gendern").onclick=function(){
+        const texte= document.querySelectorAll("#texte p");
+        texte.forEach(p=>{
+            let text= p.textContent;
+            text=text.replaceAll("Techniker", "Techniker:innen");
+            text=text.replaceAll("Mitarbeiter", "Mitarbeiter:innen");
+            text=text.replaceAll("Benutzer", "Benutzer:innen");
+            p.textContent=text;
+        });
+        alert("Texte wurden gegendert!");
+    };
+</script>
+    </body>
+</html>
+        
